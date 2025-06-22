@@ -1,5 +1,5 @@
 import React from 'react';
-import BebsyMainApp from './bebsy_main_app.tsx';
+import BebsyMainApp from './bebsy_main_app';
 
 function App() {
   return (
