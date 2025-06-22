@@ -1,10 +1,10 @@
 import React from 'react';
-import Dashboard from './bebsy_dashboard.tsx';
+import BebsyMainApp from './bebsy_main_app.tsx';
 
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <BebsyMainApp />
     </div>
   );
 }
