@@ -1,4 +1,4 @@
-typescriptimport React from 'react';
+import React from 'react';
 import Dashboard from './bebsy_dashboard';
 
 function App() {
