@@ -1,5 +1,5 @@
 import React from 'react';
-import Dashboard from './bebsy_dashboard';
+import Dashboard from './bebsy_dashboard.tsx';
 
 function App() {
   return (
