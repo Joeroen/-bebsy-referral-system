@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
 
+  // Voeg dit toe:
+  useEffect(() => {
+    document.title = "Bebsy - Deel je Reisrvaring";
+  }, []);
+
+  // Je bestaande code blijft hetzelfde...
   if (currentPage === 'dashboard') {
     return <Dashboard onBack={() => setCurrentPage('landing')} />;
   }
