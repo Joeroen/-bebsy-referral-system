@@ -100,8 +100,18 @@ function LandingPage({ onLogin }) {
         zIndex: 1000
       }}>
         <div style={{maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px'}}>
-          <div style={{fontSize: '24px', fontWeight: 'bold', color: '#2c3e50'}}>
-            🌍 Bebsy
+          <div style={{display: 'flex', alignItems: 'center', fontSize: '24px', fontWeight: 'bold', color: '#2c3e50'}}>
+            <img 
+              src="/bebsy-logo.png" 
+              alt="Bebsy Logo" 
+              style={{
+                height: '35px',
+                width: 'auto',
+                marginRight: '10px',
+                objectFit: 'contain'
+              }}
+            />
+            Bebsy
           </div>
           <div>
             <a href="#features" style={{margin: '0 20px', textDecoration: 'none', color: '#2c3e50'}}>Features</a>
@@ -335,8 +345,18 @@ function LandingPage({ onLogin }) {
       {/* Footer */}
       <footer style={{background: '#2c3e50', color: 'white', padding: '40px 20px'}}>
         <div style={{maxWidth: '1200px', margin: '0 auto', textAlign: 'center'}}>
-          <div style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '20px'}}>
-            🌍 Bebsy
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', fontWeight: 'bold', marginBottom: '20px'}}>
+            <img 
+              src="/bebsy-logo.png" 
+              alt="Bebsy Logo" 
+              style={{
+                height: '35px',
+                width: 'auto',
+                marginRight: '10px',
+                objectFit: 'contain'
+              }}
+            />
+            Bebsy
           </div>
           <div style={{display: 'flex', justifyContent: 'center', gap: '30px', marginBottom: '30px', flexWrap: 'wrap'}}>
             <a href="#" style={{color: 'white', textDecoration: 'none'}}>Privacy</a>
@@ -480,7 +500,19 @@ function DashboardApp({ onLogout }) {
     <div style={{fontFamily: 'Arial, sans-serif', minHeight: '100vh', background: '#ecf0f1'}}>
       {/* Header */}
       <header style={{background: '#2c3e50', color: 'white', padding: '20px', textAlign: 'center'}}>
-        <h1 style={{margin: 0, fontSize: '28px'}}>🌍 Bebsy Referral System</h1>
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '10px'}}>
+          <img 
+            src="/bebsy-logo.png" 
+            alt="Bebsy Logo" 
+            style={{
+              height: '40px',
+              width: 'auto',
+              marginRight: '15px',
+              objectFit: 'contain'
+            }}
+          />
+          <h1 style={{margin: 0, fontSize: '28px'}}>Bebsy Referral System</h1>
+        </div>
         <p style={{margin: '5px 0 0 0', opacity: 0.8}}>Uw professionele verwijzingsplatform</p>
       </header>
 
