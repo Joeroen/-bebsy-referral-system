@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
 
-  // Voeg dit toe:
+  // Voeg dit toe: 
   useEffect(() => {
     document.title = "Bebsy - Deel je Reisrvaring";
   }, []);
