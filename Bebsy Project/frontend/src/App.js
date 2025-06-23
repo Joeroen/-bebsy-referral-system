@@ -15,18 +15,6 @@ function App() {
 
   return <LandingPage onLogin={() => setCurrentPage('dashboard')} />;
 }
-import React, { useState } from 'react';
-
-function App() {
-  const [currentPage, setCurrentPage] = useState('landing');
-
-  if (currentPage === 'dashboard') {
-    return <Dashboard onBack={() => setCurrentPage('landing')} />;
-  }
-
-  return <LandingPage onLogin={() => setCurrentPage('dashboard')} />;
-}
-
 function LandingPage({ onLogin }) {
   return (
     <div style={{fontFamily: 'Arial, sans-serif', background: '#fff'}}>
