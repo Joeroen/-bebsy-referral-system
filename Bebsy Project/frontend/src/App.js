@@ -1,20 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
 
-  // Voeg dit toe:
-  useEffect(() => {
-    document.title = "Bebsy - Deel je Reisrvaring";
-  }, []);
-
-  // Je bestaande code blijft hetzelfde...
   if (currentPage === 'dashboard') {
     return <Dashboard onBack={() => setCurrentPage('landing')} />;
   }
 
   return <LandingPage onLogin={() => setCurrentPage('dashboard')} />;
 }
+
 function LandingPage({ onLogin }) {
   return (
     <div style={{fontFamily: 'Arial, sans-serif', background: '#fff'}}>
@@ -63,7 +58,7 @@ function LandingPage({ onLogin }) {
       {/* Hero Section */}
       <section style={{
         height: '70vh',
-        background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")',
+        background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1544925248-120b99b2eea2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
@@ -245,7 +240,7 @@ function LandingPage({ onLogin }) {
             }}>
               <div style={{position: 'relative', height: '250px'}}>
                 <img 
-                  src="https://images.unsplash.com/photo-1539650116574-75c0c6d73a2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Kwaliteit"
                   style={{width: '100%', height: '100%', objectFit: 'cover'}}
                 />
