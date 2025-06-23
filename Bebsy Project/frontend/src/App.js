@@ -58,7 +58,7 @@ function LandingPage({ onLogin }) {
       {/* Hero Section */}
       <section style={{
         height: '70vh',
-        background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/positano-hero.jpg")',
+        background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/positano-hero.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
