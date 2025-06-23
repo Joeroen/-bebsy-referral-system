@@ -49,42 +49,42 @@ function LandingPage({ onLogin }) {
 
   const features = [
     {
-      icon: '🔗',
-      title: 'Unieke Referral Links',
-      description: 'Genereer persoonlijke verwijzingslinks en deel ze met vrienden en familie'
+      icon: '✈️',
+      title: 'Deel Jouw Reiservaringen',
+      description: 'Vertel vrienden over jouw prachtige reis en help hen ook zo\'n mooie ervaring te beleven'
     },
     {
-      icon: '📊',
-      title: 'Real-time Analytics',
-      description: 'Volg je verwijzingen en verdiensten in real-time met gedetailleerde rapporten'
+      icon: '💝',
+      title: 'Beiden Profiteren',
+      description: 'Jouw vrienden krijgen korting op hun eerste reis en jij spaart voor jouw volgende avontuur'
     },
     {
-      icon: '🎁',
-      title: 'Geweldige Beloningen',
-      description: 'Verdien kortingen, gratis excursies en exclusieve VIP-behandelingen'
+      icon: '🌍',
+      title: 'Ontdek Samen Nieuwe Plekken',
+      description: 'Van romantische stedentrips tot avontuurlijke rondreis - er is voor ieder wat wils'
     },
     {
-      icon: '💰',
-      title: 'Automatische Uitbetalingen',
-      description: 'Ontvang je verdiende beloningen automatisch op je account'
+      icon: '🎯',
+      title: 'Simpel en Persoonlijk',
+      description: 'Jouw persoonlijke code delen is zo gedaan - net zo makkelijk als een foto versturen'
     },
     {
-      icon: '📱',
-      title: 'Mobiel Vriendelijk',
-      description: 'Beheer je verwijzingen overal en altijd via je smartphone'
+      icon: '🏆',
+      title: 'Echte Bebsy Kwaliteit',
+      description: 'Jouw vrienden ervaren dezelfde zorgvuldige service waar jij al zo tevreden over bent'
     },
     {
-      icon: '🛡️',
-      title: 'Veilig & Betrouwbaar',
-      description: 'Je gegevens zijn volledig beveiligd met de nieuwste encryptietechnologie'
+      icon: '💌',
+      title: 'Warme Aanbeveling',
+      description: 'Een persoonlijke aanbeveling van jou betekent veel meer dan elke advertentie'
     }
   ];
 
   const stats = [
-    { number: '10,000+', label: 'Actieve Gebruikers' },
-    { number: '€50,000+', label: 'Uitgekeerde Beloningen' },
-    { number: '25,000+', label: 'Succesvolle Verwijzingen' },
-    { number: '4.9★', label: 'Gebruikerswaardering' }
+    { number: '2,500+', label: 'Tevreden Reizigers' },
+    { number: '€450+', label: 'Gemiddelde Besparingen' },
+    { number: '1,200+', label: 'Vrienden Geholpen' },
+    { number: '4.8★', label: 'Waardering Klanten' }
   ];
 
   return (
@@ -129,10 +129,10 @@ function LandingPage({ onLogin }) {
       <section style={{...heroStyle, marginTop: '70px'}}>
         <div style={{maxWidth: '800px'}}>
           <h1 style={{fontSize: '48px', marginBottom: '20px', fontWeight: 'bold'}}>
-            Verdien Beloningen Door Te Verwijzen
+            Deel Jouw Bebsy Ervaring Met Vrienden
           </h1>
           <p style={{fontSize: '22px', marginBottom: '40px', opacity: 0.9}}>
-            Het slimste verwijzingssysteem voor jouw bedrijf. Deel je unieke link, verwijs vrienden en verdien geweldige beloningen!
+            Ben je tevreden over jouw reis met Bebsy? Help jouw vrienden en familie ook van onze mooie reizen te genieten én verdien samen kortingen!
           </p>
           <div style={{marginBottom: '40px'}}>
             <button 
@@ -141,7 +141,7 @@ function LandingPage({ onLogin }) {
               onMouseOver={(e) => e.target.style.transform = 'scale(1.05)'} 
               onMouseOut={(e) => e.target.style.transform = 'scale(1)'}
             >
-              Start Nu Gratis
+              Deel Nu Met Vrienden
             </button>
             <button 
               style={secondaryButtonStyle} 
@@ -149,13 +149,13 @@ function LandingPage({ onLogin }) {
               onMouseOver={(e) => e.target.style.background = 'rgba(255,255,255,0.1)'} 
               onMouseOut={(e) => e.target.style.background = 'transparent'}
             >
-              Bekijk Demo
+              Mijn Persoonlijke Code
             </button>
           </div>
           
           {/* Email Signup */}
           <div style={{background: 'rgba(255,255,255,0.1)', padding: '20px', borderRadius: '10px', maxWidth: '400px', margin: '0 auto'}}>
-            <p style={{marginBottom: '15px', fontSize: '16px'}}>Ontvang updates over nieuwe features:</p>
+            <p style={{marginBottom: '15px', fontSize: '16px'}}>Wil je op de hoogte blijven van onze nieuwe bestemmingen?</p>
             <div style={{display: 'flex', gap: '10px'}}>
               <input 
                 type="email" 
@@ -209,10 +209,10 @@ function LandingPage({ onLogin }) {
         <div style={{maxWidth: '1200px', margin: '0 auto'}}>
           <div style={{textAlign: 'center', marginBottom: '60px'}}>
             <h2 style={{fontSize: '36px', color: '#2c3e50', marginBottom: '20px'}}>
-              Waarom Kiezen Voor Bebsy?
+              Waarom Jouw Vrienden Ook Van Bebsy Zullen Houden
             </h2>
             <p style={{fontSize: '18px', color: '#7f8c8d', maxWidth: '600px', margin: '0 auto'}}>
-              Ontdek alle krachtige features die jouw verwijzingservaring naar een hoger niveau tillen
+              Jij weet al hoe fijn het is om met Bebsy te reizen. Help jouw vrienden ook van deze ervaring te genieten
             </p>
           </div>
           
