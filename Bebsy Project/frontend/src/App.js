@@ -162,18 +162,14 @@ function LoginPage({ onLogin, onBack }) {
       }}>
         {/* Header */}
         <div style={{textAlign: 'center', marginBottom: '40px'}}>
-          <div style={{
-            fontFamily: 'Oleo Script Swash Caps, cursive',
-            fontSize: '36px',
-            color: '#1E0A46',
-            marginBottom: '10px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}>
-            Bebsy
-            <span style={{color: '#8C4BD7', marginLeft: '5px', fontSize: '28px'}}>✈</span>
-          </div>
+          <img 
+            src="/bebsy-logo.png" 
+            alt="Bebsy Logo" 
+            style={{
+              height: '40px',
+              marginBottom: '10px'
+            }}
+          />
           <h1 style={{
             fontSize: '28px',
             fontWeight: '700',
@@ -527,16 +523,11 @@ function LandingPage({ onLogin }) {
         borderBottom: '1px solid #f1f1f1'
       }}>
         <div style={{maxWidth: '1400px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 40px'}}>
-          <div style={{
-            fontFamily: 'Oleo Script Swash Caps, cursive', 
-            fontSize: '32px', 
-            color: '#1E0A46',
-            display: 'flex',
-            alignItems: 'center'
-          }}>
-            Bebsy
-            <span style={{color: '#8C4BD7', marginLeft: '5px', fontSize: '24px'}}>✈</span>
-          </div>
+          <img 
+            src="/bebsy-logo.png" 
+            alt="Bebsy Logo" 
+            style={{height: '32px'}}
+          />
           <div style={{display: 'flex', alignItems: 'center', gap: '40px'}}>
             <a href="#" style={{textDecoration: 'none', color: '#4a5568', fontSize: '16px', fontWeight: '500'}}>Over Delen</a>
             <a href="#" style={{textDecoration: 'none', color: '#4a5568', fontSize: '16px', fontWeight: '500'}}>Hoe het werkt</a>
@@ -642,17 +633,11 @@ function Dashboard({ user, onLogout }) {
       
       <header style={{background: 'white', padding: '40px', textAlign: 'center', boxShadow: '0 2px 20px rgba(0,0,0,0.08)'}}>
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '15px'}}>
-          <div style={{
-            fontFamily: 'Oleo Script Swash Caps, cursive', 
-            fontSize: '32px', 
-            color: '#1E0A46',
-            display: 'flex',
-            alignItems: 'center',
-            marginRight: '20px'
-          }}>
-            Bebsy
-            <span style={{color: '#8C4BD7', marginLeft: '5px', fontSize: '24px'}}>✈</span>
-          </div>
+          <img 
+            src="/bebsy-logo.png" 
+            alt="Bebsy Logo" 
+            style={{height: '32px', marginRight: '20px'}}
+          />
           <h1 style={{margin: 0, fontSize: '32px', fontWeight: '700', color: '#1a202c'}}>
             Welkom terug, {user.name.split(' ')[0]}!
           </h1>
