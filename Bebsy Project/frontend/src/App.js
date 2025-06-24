@@ -163,7 +163,7 @@ function LoginPage({ onLogin, onBack }) {
         {/* Header */}
         <div style={{textAlign: 'center', marginBottom: '40px'}}>
           <img 
-            src="/bebsy_logo.png" 
+            src="/public/bebsy_logo.png" 
             alt="Bebsy Logo" 
             style={{
               height: '40px',
@@ -524,7 +524,7 @@ function LandingPage({ onLogin }) {
       }}>
         <div style={{maxWidth: '1400px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 40px'}}>
           <img 
-            src="/bebsy_logo.png" 
+            src="/public/bebsy_logo.png" 
             alt="Bebsy Logo" 
             style={{height: '32px'}}
           />
@@ -634,7 +634,7 @@ function Dashboard({ user, onLogout }) {
       <header style={{background: 'white', padding: '40px', textAlign: 'center', boxShadow: '0 2px 20px rgba(0,0,0,0.08)'}}>
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '15px'}}>
           <img 
-            src="/bebsy_logo.png" 
+            src="/public/bebsy_logo.png" 
             alt="Bebsy Logo" 
             style={{height: '32px', marginRight: '20px'}}
           />
