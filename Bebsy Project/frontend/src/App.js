@@ -1,7 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('landing');
+  
+  useEffect(() => {
+    document.title = "Bebsy - Deel je Reisrvaring";
+  }, []);
 
   if (currentPage === 'dashboard') {
     return <Dashboard onBack={() => setCurrentPage('landing')} />;
@@ -58,21 +62,23 @@ function LandingPage({ onLogin }) {
       {/* Hero Section */}
       <section style={{
         height: '70vh',
-        background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/positano-hero.png")',
+        background: 'url("/images/positano-hero.png")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        position: 'relative'
       }}>
         <div style={{
-          background: '#8b5cf6',
+          background: 'rgba(139, 92, 246, 0.85)',
           borderRadius: '20px',
           padding: '50px 60px',
           textAlign: 'center',
           maxWidth: '800px',
           margin: '0 20px',
-          boxShadow: '0 25px 50px rgba(0,0,0,0.2)'
+          boxShadow: '0 25px 50px rgba(0,0,0,0.2)',
+          backdropFilter: 'blur(5px)'
         }}>
           <h1 style={{
             fontSize: '42px', 
