@@ -298,7 +298,7 @@ function LoginPage({ onLogin, onBack }) {
           }}>
             Nog geen account?{' '}
             <button
-              onClick={() => setCurrentPage('register')}
+              onClick={() => alert('Registratie komt binnenkort!')}
               style={{
                 background: 'none',
                 border: 'none',
