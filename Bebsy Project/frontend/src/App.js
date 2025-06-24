@@ -4,7 +4,15 @@ function App() {
   const [currentPage, setCurrentPage] = useState('landing');
   
   useEffect(() => {
-    document.title = "Bebsy - Deel je Reisrvaring";
+    document.title = "Bebsy - Deel je Reiservaring";
+    // Remove any stray text nodes
+    const textNodes = document.evaluate("//text()[normalize-space(.)='html']", document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
+    for (let i = 0; i < textNodes.snapshotLength; i++) {
+      const node = textNodes.snapshotItem(i);
+      if (node && node.parentNode) {
+        node.parentNode.removeChild(node);
+      }
+    }
   }, []);
 
   if (currentPage === 'dashboard') {
@@ -87,7 +95,7 @@ function LandingPage({ onLogin }) {
             color: 'white',
             lineHeight: '1.2'
           }}>
-            Deel jouw mooie Bebsy ervaring
+            "Waarom heb ik nog nooit eerder van jullie gehoord?"
           </h1>
           <p style={{
             fontSize: '20px', 
@@ -95,7 +103,7 @@ function LandingPage({ onLogin }) {
             color: 'rgba(255,255,255,0.95)',
             lineHeight: '1.5'
           }}>
-            Help jouw vrienden en familie ook van zo'n prachtige reis te genieten. Jullie profiteren allebei van mooie kortingen!
+            Dat horen we vaak. Alsof Bebsy het best bewaarde geheim van Nederland is. Tijd om daar iets aan te doen — met jouw hulp.
           </p>
           <button 
             style={{
@@ -111,7 +119,7 @@ function LandingPage({ onLogin }) {
             }}
             onClick={onLogin}
           >
-            Krijg mijn persoonlijke code
+            Start met delen
           </button>
         </div>
       </section>
@@ -121,10 +129,10 @@ function LandingPage({ onLogin }) {
         <div style={{maxWidth: '1200px', margin: '0 auto'}}>
           <div style={{textAlign: 'center', marginBottom: '60px'}}>
             <h2 style={{fontSize: '32px', color: '#1a202c', marginBottom: '20px', fontWeight: '700'}}>
-              Samen delen, samen besparen
+              Bij Bebsy zijn onze klanten onze beste ambassadeurs
             </h2>
             <p style={{fontSize: '18px', color: '#718096'}}>
-              Onze klanten hebben al veel vrienden geholpen van mooie reizen te genieten
+              Deel jouw ervaring met vrienden of familie, en jullie profiteren allebei. Want goede tips zijn er om te delen.
             </p>
           </div>
           
@@ -285,10 +293,10 @@ function LandingPage({ onLogin }) {
       }}>
         <div style={{maxWidth: '800px', margin: '0 auto'}}>
           <h2 style={{fontSize: '40px', marginBottom: '25px', color: 'white', fontWeight: '700'}}>
-            Klaar om jouw vrienden te verrassen?
+            Ben jij fan van Bebsy?
           </h2>
           <p style={{fontSize: '20px', marginBottom: '50px', color: 'rgba(255,255,255,0.9)'}}>
-            Log in met je Bebsy gegevens en krijg direct jouw persoonlijke deelcode
+            Maak ons bekend in je netwerk. Geef je vrienden een fijne introductiekorting, en ontvang zelf een mooie beloning. Zo maken we samen nog meer mensen blij met een zorgeloze reis.
           </p>
           <button 
             style={{
@@ -304,7 +312,7 @@ function LandingPage({ onLogin }) {
             }}
             onClick={onLogin}
           >
-            Haal mijn persoonlijke code op
+            Start met delen
           </button>
         </div>
       </section>
