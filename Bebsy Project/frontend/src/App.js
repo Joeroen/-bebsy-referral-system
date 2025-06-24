@@ -526,7 +526,7 @@ function LandingPage({ onLogin }) {
           <img 
             src="/bebsy-logo.png" 
             alt="Bebsy Logo" 
-            style={{height: '32px'}}
+            style={{height: '48px'}}
           />
           <div style={{display: 'flex', alignItems: 'center', gap: '40px'}}>
             <a href="#" style={{textDecoration: 'none', color: '#4a5568', fontSize: '16px', fontWeight: '500'}}>Over Delen</a>
