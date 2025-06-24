@@ -6,6 +6,24 @@ function App() {
   
   useEffect(() => {
     document.title = "Bebsy - Deel je Reiservaring";
+    // Clean up any stray text nodes
+    setTimeout(() => {
+      const walker = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        {
+          acceptNode: function(node) {
+            return node.textContent.trim() === 'html' ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+          }
+        }
+      );
+      let node;
+      while (node = walker.nextNode()) {
+        if (node.parentNode) {
+          node.parentNode.removeChild(node);
+        }
+      }
+    }, 100);
   }, []);
 
   const handleLogin = (userData) => {
@@ -148,9 +166,13 @@ function LoginPage({ onLogin, onBack }) {
             fontFamily: 'Oleo Script Swash Caps, cursive',
             fontSize: '36px',
             color: '#1E0A46',
-            marginBottom: '10px'
+            marginBottom: '10px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
           }}>
-            Bebsy ✈
+            Bebsy
+            <span style={{color: '#8C4BD7', marginLeft: '5px', fontSize: '28px'}}>✈</span>
           </div>
           <h1 style={{
             fontSize: '28px',
